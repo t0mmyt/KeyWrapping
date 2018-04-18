@@ -1,0 +1,21 @@
+group 'uk.tommyt.encryption'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile (
+            'org.bouncycastle:bcprov-jdk15on:1.59',
+            'com.google.guava:guava:24.1-jre'
+    )
+    testCompile (
+            'junit:junit:4+',
+            'org.hamcrest:hamcrest-all:1.3'
+    )
+}
